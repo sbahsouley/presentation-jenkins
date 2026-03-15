@@ -1,6 +1,6 @@
 node('docker') {
     // Définition du nom complet de l'image
-    def registryProjet = 'ghcr.io/sbahsouley/presentation-jenkins'
+    def registryProjet = 'registry.gitlab.com/sbahsouley/presentation-jenkins'
     def IMAGE = "${registryProjet}:version-${env.BUILD_ID}"
     def img
     stage('Clone') {
